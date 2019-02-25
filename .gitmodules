@@ -1,0 +1,3 @@
+[submodule "tiny-htm"]
+	path = tiny-htm
+	url = https://github.com/marty1885/tiny-htm
