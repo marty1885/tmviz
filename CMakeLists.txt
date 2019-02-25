@@ -16,6 +16,9 @@ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O3 -Wno-odr -march=nati
 
 include_directories(tiny-htm)
 
+
 project(tmviz CXX)
 add_executable(tmviz main.cpp)
-target_link_libraries(tmviz sfml-system sfml-graphics sfml-window)
+find_package(OpenMP REQUIRED)
+target_link_libraries(tmviz sfml-system sfml-graphics sfml-window OpenMP::OpenMP_CXX)
+
